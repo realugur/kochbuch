@@ -1,0 +1,34 @@
+\documentclass{scrartcl}
+
+\usepackage[ngerman]{babel}
+\usepackage[bf]{cooking}
+\usepackage{fdsymbol}
+\usepackage{textcomp}
+% \usepackage{cuisine}
+% \usepackage{xcookybooky}
+% \usepackage{cookingsymbols}
+
+\renewcommand*{\recipetitle}[1]{\Huge{\textbf{#1}}\normalsize\vspace{1cm}}
+
+\DeclareRobustCommand*{\portions}[1]{\item[Portionen] #1}
+\DeclareRobustCommand*{\onestar}{\item[Bewertung] $\bigstar\largewhitestar\largewhitestar\largewhitestar\largewhitestar$}
+\DeclareRobustCommand*{\twostar}{\item[Bewertung] $\bigstar\bigstar\largewhitestar\largewhitestar\largewhitestar$}
+\DeclareRobustCommand*{\threestar}{\item[Bewertung] $\bigstar\bigstar\bigstar\largewhitestar\largewhitestar$}
+\DeclareRobustCommand*{\fourstar}[0]{\item[Bewertung] $\bigstar\bigstar\bigstar\bigstar\largewhitestar$}
+\DeclareRobustCommand*{\fivestar}{\item[Bewertung] $\bigstar\bigstar\bigstar\bigstar\bigstar$}
+
+
+\title{Vegan Kochen}
+\author{Uğur Turhan}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\include{rezepte/bolognaise/bolognaise}
+\include{rezepte/tofu_kichererbsen_curry/tofu_kichererbsen_curry}
+\include{rezepte/kartoffeln_kichererbsen_curry/kartoffeln_kichererbsen_curry}
+\include{rezepte/rote_linsen/rote_linsen}
+\include{rezepte/bananenbrot/bananenbrot}
+
+\end{document}
